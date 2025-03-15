@@ -1,0 +1,101 @@
+.crime-item {
+    padding: 8px 12px;
+    margin: 5px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.crime-item:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.btn1 {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    font-size: 32px;
+    text-align: center;
+    line-height: 65px;
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+   
+  }
+  
+
+  .btn:hover {
+    background-color: RoyalBlue;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 5px;
+    background: #f9f9f9;
+    transition: all 0.3s ease-in-out;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+/* Hover Effect */
+li:hover {
+    background: #007bff;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Button inside li */
+li button {
+    background: #0056b3;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+li button:hover {
+    background: #003d80;
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+}
+
+h3 {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+  margin-top: 20px;
+}
+
+.container1 {
+  max-width: 1200px; /* Keeps content aligned properly */
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  margin-left: 200px;
+}

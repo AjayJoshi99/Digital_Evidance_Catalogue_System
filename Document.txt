@@ -1,0 +1,16 @@
+All HTML file must be in templates folder.
+
+MongoDB Atlas:-
+user name : ajayjoshi1908
+Password : oY3CJK3VDbJ1V0IK
+
+
+Blueprint :
+login_blueprint = Blueprint("login", __name__)
+here login_blueprint is object of blueprint that we have to register as below. login parameter is identity parameter which is used for debug only.
+
+@login_blueprint.route("/check_login", methods = ["POST"])
+/check_login if actual url call.
+
+app.register_blueprint(Backend.login.login_blueprint)
+Register blueprint in main.py

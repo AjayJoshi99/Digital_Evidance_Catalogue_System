@@ -1,0 +1,92 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Container */
+.container-fluid {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    margin: 20px auto;
+}
+
+/* Header Styling */
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 3px solid #007bff;
+}
+
+h2 {
+    font-size: 24px;
+    color: #007bff;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Cases & Files List */
+h3 {
+    color: #444;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #fff;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* View Button */
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Floating Add File Button */
+.btn1 {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn1:hover {
+    background: #218838;
+}
