@@ -1,6 +1,6 @@
 from flask import render_template, request, Blueprint, session
 from pymongo import MongoClient
-from Backend.helper import get_investigator_cases, get_file_info, all_files, get_history, get_file_info2
+from Backend.helper import get_investigator_cases, get_file_info, all_files, get_history, get_file_info2, get_all_users, emp_case
 client = MongoClient("mongodb+srv://ajayjoshi1908:oY3CJK3VDbJ1V0IK@decscluster.gw3pd.mongodb.net/user?retryWrites=true&w=majority")
 db = client['user']
 
@@ -22,7 +22,9 @@ def Login():
             crimes = [doc["crime"] for doc in collection.find({})] 
             grouped_files = all_files()
             history = get_history()
-            return render_template("admin.html", crimes=crimes, grouped_files=grouped_files, history_data=history)
+            users = get_all_users()
+            employee_crime = emp_case()
+            return render_template("admin.html", crimes=crimes, grouped_files=grouped_files, history_data=history, employees = users, employee_crime=employee_crime)
         elif selected_item=='Investigator':
             cases = get_investigator_cases(name)
             file_info = get_file_info(name)
@@ -40,7 +42,9 @@ def admin_page():
     crimes = [doc["crime"] for doc in db['crime'].find({})]
     grouped_files = all_files()
     history = get_history()
-    return render_template("admin.html", crimes=crimes, grouped_files=grouped_files, history_data=history)
+    users = get_all_users()
+    employee_crime = emp_case()
+    return render_template("admin.html", crimes=crimes, grouped_files=grouped_files, history_data=history, employees = users, employee_crime=employee_crime)
 
 @investigator_blueprint.route('/investigatorPage', methods=['POST', 'GET'])
 def investigator_Page():

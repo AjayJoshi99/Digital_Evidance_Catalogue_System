@@ -6,6 +6,7 @@
     <title>Upload File</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='style1.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -53,7 +54,7 @@
 <body>
 
     {% include "navbar.html" %}
-    <div class = "btn" onclick="window.location.href='/investigatorPage'">Back</div>
+    <div onclick="window.location.href='/investigatorPage'" style="cursor: pointer;"><i class="fa fa-arrow-circle-left fa-3x custom-icon"></i></div>
     <div class="container upload-container">
         <div class="d-flex justify-content-center align-items-center vh-100">
             <div class="card shadow-lg p-4" style="width: 100%; max-width: 500px;">

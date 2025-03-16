@@ -53,3 +53,23 @@ def get_history():
     collection = db['history']
     files = collection.find({})
     return files
+
+def get_all_users():
+    collection = db['login']
+    l = [[i['username'],i['position'] ]for i in collection.find({})]
+    return l
+
+def emp_case():
+    collection = db['user_crime']
+    emp_crime_dict = {}
+
+    for record in collection.find({}):
+        username = record['username']
+        crime = record['crime']
+        
+        if username in emp_crime_dict:
+            emp_crime_dict[username].append(crime)  
+        else:
+            emp_crime_dict[username] = [crime] 
+
+    return emp_crime_dict 

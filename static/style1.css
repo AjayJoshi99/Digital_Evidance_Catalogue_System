@@ -49,3 +49,8 @@ body {
     border: none;
     margin-bottom: 10px;
 }
+.custom-icon {
+    font-size: 10px; 
+    margin-left: 20px; 
+    margin-top: 5px;
+}
