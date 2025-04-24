@@ -59,9 +59,9 @@ DECS is a secure and role-based digital platform designed to manage, store, retr
   python main.py
 ```
 
-🤝 Contributors
+**🤝 Contributors**
 Ajay Joshi
 
-📬 Contact
-For queries or contributions, reach out at:
+**📬 Contact**
+For queries or contributions, reach out at:  
 📧 ajay.joshi1908@gmail.com
