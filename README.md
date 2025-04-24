@@ -6,10 +6,7 @@ DECS is a secure and role-based digital platform designed to manage, store, retr
 
 - 🔐 **Role-Based Access Control** (Admin, Investigator, Analyst)
 - 📂 **Digital Evidence Upload** with metadata
-- 🧾 **Hash Verification** for data integrity
-- 🔍 **Advanced Search & Filtering** by case, date, etc.
 - 🛡️ **Audit Trail** for all activities
-- 📊 **Report Generation** (PDF/CSV)
 - 🧠 **User-Friendly Interface** with HTML & Jinja2
 - 🗂️ **MongoDB-based Storage** with secure handling
 
